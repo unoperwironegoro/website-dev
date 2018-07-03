@@ -1,0 +1,17 @@
+<div class="grid-container">
+  <mat-grid-list cols="5">
+    <mat-grid-tile *ngFor="let card of mediaCards">
+
+        <a mat-list-item [href]="card.link">
+          <mat-card class="dashboard-card">
+            <mat-card-content class="dashboard-card-content">
+              <div mat-fab>
+                <i [class]="card.icon" aria-label="Social media link"></i>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </a>
+
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
