@@ -25,6 +25,10 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>unoper</span>
+      <span class="spacer"></span>
+      <a *ngFor="let link of toolbarLinks" [href]="link.link" class="icon">
+        <i [class]="link.icon" aria-label="Social media link"></i>
+      </a>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
